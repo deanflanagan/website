@@ -6,6 +6,8 @@
     <title>Dean Flanagan - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
     <style>
         .hidden {
             display: none;
@@ -34,19 +36,21 @@
                 <li><a href="#">Zonal redundancy</a></li>
             </ul>
         </section>
-
         <section id="skills">
             <h2>Skills</h2>
             <p>Click to expand each section. Some links will go to GitHub</p>
             <ul>
                 <li>
-                    <a href="#" onclick="toggleVisibility('monitoring-details'); return false;">
-                        Monitoring
-                        <img src="icons/new_relic_logo_horizontal.svg" alt="New Relic Logo" style="width: 60px; height: auto; vertical-align: middle; margin-left: 5px;">
-                        <img src="icons/prometheus.svg" alt="New Relic Logo" style="width: 60px; height: auto; vertical-align: middle; margin-left: 5px;">
-                        <img src="icons/grafana.svg" alt="New Relic Logo" style="width: 60px; height: auto; vertical-align: middle; margin-left: 5px;">
+                    <div class="skill-title">
+                        <a href="#" onclick="toggleVisibility('monitoring-details'); return false;">Monitoring</a>
+                        <div class="logos">
+                            <img src="icons/new_relic.svg" alt="New Relic Logo" class="skill-logo">
+                            <img src="icons/prometheus.svg" alt="Prometheus Logo" class="skill-logo">
+                            <img src="icons/grafana.svg" alt="Grafana Logo" class="skill-logo">                            
+                            <img src="icons/splunk.svg" alt="Splunk Logo" class="skill-logo">
 
-                    </a>
+                        </div>
+                    </div>
                     <ul id="monitoring-details" class="hidden">
                         <li>Implemented monitoring solutions using Prometheus and Grafana.</li>
                         <li>Set up alerting mechanisms to ensure system reliability.</li>
@@ -54,7 +58,15 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="#" onclick="toggleVisibility('devops-details'); return false;">Development and DevOps</a>
+                    <div class="skill-title">
+                        <a href="#" onclick="toggleVisibility('devops-details'); return false;">Development and DevOps</a>
+                        <div class="logos">
+                            <img src="icons/flux.svg" alt="Flux Logo" class="skill-logo">
+                            <img src="icons/helm.svg" alt="Helm Logo" class="skill-logo">
+                            <img src="icons/terraform.svg" alt="Terraform Logo" class="skill-logo">
+                            <img src="icons/jenkins.svg" alt="Jenkins Logo" class="skill-logo">
+                        </div>
+                    </div>
                     <ul id="devops-details" class="hidden">
                         <li>Automated CI/CD pipelines using Jenkins and GitHub Actions.</li>
                         <li>Managed infrastructure as code with Terraform.</li>
@@ -62,53 +74,19 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="#" onclick="toggleVisibility('kubernetes-details'); return false;">Kubernetes</a>
+                    <div class="skill-title">
+                        <a href="#" onclick="toggleVisibility('kubernetes-details'); return false;">Containers</a>
+                        <div class="logos">
+                            <!-- Add logos here if needed -->
+                        </div>
+                    </div>
                     <ul id="kubernetes-details" class="hidden">
                         <li>Deployed and managed Kubernetes clusters.</li>
                         <li>Configured Kubernetes resources for optimal performance.</li>
                         <li>Implemented Helm charts for application deployment.</li>
                     </ul>
                 </li>
-                <li>
-                    <a href="#" onclick="toggleVisibility('postgres-details'); return false;">Postgres</a>
-                    <ul id="postgres-details" class="hidden">
-                        <li>Designed and optimized PostgreSQL databases.</li>
-                        <li>Implemented backup and recovery strategies.</li>
-                        <li>Wrote complex SQL queries for data analysis.</li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#" onclick="toggleVisibility('react-details'); return false;">React</a>
-                    <ul id="react-details" class="hidden">
-                        <li>Developed dynamic web applications using React.</li>
-                        <li>Implemented state management with Redux.</li>
-                        <li>Created reusable components for efficient development.</li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#" onclick="toggleVisibility('pulumi-details'); return false;">Pulumi</a>
-                    <ul id="pulumi-details" class="hidden">
-                        <li>Managed cloud infrastructure using Pulumi.</li>
-                        <li>Automated infrastructure provisioning and deployment.</li>
-                        <li>Integrated Pulumi with CI/CD pipelines.</li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#" onclick="toggleVisibility('python-details'); return false;">Python</a>
-                    <ul id="python-details" class="hidden">
-                        <li>Developed automation scripts and tools using Python.</li>
-                        <li>Built web applications with Flask and Django.</li>
-                        <li>Performed data analysis and visualization with Pandas and Matplotlib.</li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#" onclick="toggleVisibility('terraform-details'); return false;">Terraform</a>
-                    <ul id="terraform-details" class="hidden">
-                        <li>Provisioned and managed cloud infrastructure with Terraform.</li>
-                        <li>Wrote reusable Terraform modules for infrastructure as code.</li>
-                        <li>Integrated Terraform with CI/CD pipelines for automated deployments.</li>
-                    </ul>
-                </li>
+                <!-- Add more skills here -->
             </ul>
         </section>
 
