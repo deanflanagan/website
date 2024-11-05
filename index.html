@@ -27,9 +27,9 @@
 
         <section id="projects">
             <h2>Projects</h2>
-            <p>All project links go to GitHub repositories</p>
+            <p>All links go to GitHub repositories</p>
             <ul>
-                <li><a href="#">SRE - reduce toil</a></li>
+                <!-- <li><a href="#">SRE - reduce toil</a></li> -->
                 <li><a href="#">Volume autoscaler</a></li>
                 <li><a href="#">Confluent operator upgrade</a></li>
                 <li><a href="#">Pulumi and Kafka Confluent multi-region cluster</a></li>
@@ -38,8 +38,77 @@
         </section>
         <section id="skills">
             <h2>Skills</h2>
-            <p>Click to expand each section. Some links will go to GitHub</p>
+            <p>Click to expand each section. All links go to GitHub repositories</p>
             <ul>
+                <li>
+                    <div class="skill-title">
+                        <a href="#" onclick="toggleVisibility('fundamentals-details'); return false;">Fundamentals</a>
+                        <div class="logos">
+                            <img src="icons/dns.svg" alt="DNS Logo" class="skill-logo">
+                            <img src="icons/drawio.svg" alt="drawio Logo" class="skill-logo">
+                            <img src="icons/python.svg" alt="Python Logo" class="skill-logo">
+                            <img src="icons/postgres.svg" alt="Postgres Logo" class="skill-logo">
+                            <img src="icons/react.svg" alt="React Logo" class="skill-logo">
+                            <img src="icons/azure.svg" alt="Azure Logo" class="skill-logo">
+                            <img src="icons/aws.svg" alt="AWS Logo" class="skill-logo">
+                            <img src="icons/linux.svg" alt="Linux Logo" class="skill-logo">
+                            <img src="icons/git.svg" alt="Git Logo" class="skill-logo">
+                            <img src="icons/jira.svg" alt="Jira Logo" class="skill-logo">
+                        </div>
+                    </div>
+                    <ul id="fundamentals-details" class="hidden">
+                        <li>Intermediate Python ability, some JavaScript and SQL skills. Some leetcode <a href="https://github.com/deanflanagan/leetcode" alt="leetcode">here</a>, lots more examples in my <a href="https://github.com/deanflanagan" alt="repos">repos</a></li>
+                        <li>Good working knowledge of basics including <a href="https://github.com/deanflanagan/004_DNS" alt="DNS">DNS</a>, bash scripting, linux, databases, configuration/secret management and more</li>
+                        <li>Take pride in delivery clean work with documentation, diagrams and agendas: keeping account of work through Jira </li>
+                        <li>Particularly enjoy working with music packages like <a href="https://pypi.org/project/music21/" alt="music21">music21</a> and midi integrations</li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="skill-title">
+                        <a href="#" onclick="toggleVisibility('certifications-details'); return false;">Certifications</a>
+                        <div class="logos">
+                            <img src="icons/chemistry.svg" alt="Chemistry Logo" class="skill-logo">
+                            <img src="icons/cka.png" alt="CKA Logo" class="skill-logo">
+                            <img src="icons/aws.svg" alt="AWS Logo" class="skill-logo">
+                        </div>
+                    </div>
+                    <ul id="certifications-details" class="hidden">
+                        <li><a href="https://www.universityofgalway.ie/courses/research-postgraduate-programmes/phd-and-masters/chemistry.html" alt="NUIG Chemistry">Bachelors of Science in Chemistry</a></li>
+                        <li><a href="https://www.credly.com/badges/bca17fed-26ec-4f58-b0c5-a410a8abf836?source=linked_in_profile" alt="AWS">AWS Certified Solutions Architect – Associate</a></li>
+                        <li><a href="https://www.credly.com/badges/624d9d31-84da-4cc3-b2a2-1ccf0aa99138/linked_in_profile" alt="CKA">Certified Kubernetes Administrator</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="skill-title">
+                        <a href="#" onclick="toggleVisibility('devops-details'); return false;">Development and DevOps</a>
+                        <div class="logos">
+                            <img src="icons/flux.svg" alt="Flux Logo" class="skill-logo">
+                            <img src="icons/helm.svg" alt="Helm Logo" class="skill-logo">
+                            <img src="icons/terraform.svg" alt="Terraform Logo" class="skill-logo">
+                            <img src="icons/jenkins.svg" alt="Jenkins Logo" class="skill-logo">
+                            <img src="icons/awscodepipeline.svg" alt="AWS CodePipeline Logo" class="skill-logo">
+                        </div>
+                    </div>
+                    <ul id="devops-details" class="hidden">
+                        <li>Automated CI/CD pipelines using Jenkins and GitHub Actions.</li>
+                        <li>Managed infrastructure as code with Terraform.</li>
+                        <li>Deployed applications using Docker and Kubernetes.</li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="skill-title">
+                        <a href="#" onclick="toggleVisibility('kubernetes-details'); return false;">Containers</a>
+                        <div class="logos">
+                            <img src="icons/kubernetes.svg" alt="Kubernetes Logo" class="skill-logo">
+                            <img src="icons/docker-svgrepo-com.svg" alt="Docker Logo" class="skill-logo">
+                        </div>
+                    </div>
+                    <ul id="kubernetes-details" class="hidden">
+                        <li>Deployed and managed Kubernetes clusters.</li>
+                        <li>Configured Kubernetes resources for optimal performance.</li>
+                        <li>Implemented Helm charts for application deployment.</li>
+                    </ul>
+                </li>
                 <li>
                     <div class="skill-title">
                         <a href="#" onclick="toggleVisibility('monitoring-details'); return false;">Monitoring</a>
@@ -57,45 +126,15 @@
                         <li>Analyzed metrics to optimize system performance.</li>
                     </ul>
                 </li>
-                <li>
-                    <div class="skill-title">
-                        <a href="#" onclick="toggleVisibility('devops-details'); return false;">Development and DevOps</a>
-                        <div class="logos">
-                            <img src="icons/flux.svg" alt="Flux Logo" class="skill-logo">
-                            <img src="icons/helm.svg" alt="Helm Logo" class="skill-logo">
-                            <img src="icons/terraform.svg" alt="Terraform Logo" class="skill-logo">
-                            <img src="icons/jenkins.svg" alt="Jenkins Logo" class="skill-logo">
-                        </div>
-                    </div>
-                    <ul id="devops-details" class="hidden">
-                        <li>Automated CI/CD pipelines using Jenkins and GitHub Actions.</li>
-                        <li>Managed infrastructure as code with Terraform.</li>
-                        <li>Deployed applications using Docker and Kubernetes.</li>
-                    </ul>
-                </li>
-                <li>
-                    <div class="skill-title">
-                        <a href="#" onclick="toggleVisibility('kubernetes-details'); return false;">Containers</a>
-                        <div class="logos">
-                            <!-- Add logos here if needed -->
-                        </div>
-                    </div>
-                    <ul id="kubernetes-details" class="hidden">
-                        <li>Deployed and managed Kubernetes clusters.</li>
-                        <li>Configured Kubernetes resources for optimal performance.</li>
-                        <li>Implemented Helm charts for application deployment.</li>
-                    </ul>
-                </li>
-                <!-- Add more skills here -->
             </ul>
         </section>
 
         <section id="bio">
             <h2>Bio</h2>
-            <p>I'm a backend engineer with a chemistry background who values both technical and soft skills. I started in chemistry, conducting plant trials, and then moved into sales, where I was reasonably successful but found it wasn’t for me long term.</p>
+            <p>I'm a backend engineer with a chemistry background who values both technical and soft skills. I started in chemistry, conducting plant trials in over thirty countries. I then moved into sales, where I was reasonably successful but found it wasn’t for me long term; at least not in the industries I was in.</p>
             <p>While in sales, I began automating tedious tasks in Excel with Python, which sparked my passion for programming. The shift into tech felt natural, and I discovered the satisfaction of building solutions over selling them.</p>
-            <p>Now, with a few years in tech, I've combined my sales insight and technical skills to become a contractor, delivering solutions that drive value and efficiency.</p>
-            <p>Plenty of people might have the same skills, but what sets me apart is my sense of humor and ability to connect with people: I'm not your typical tech dork.</p>
+            <!-- <p>Now, with a few years in tech, I've combined my sales insight and technical skills to become a contractor, delivering solutions that drive value and efficiency.</p> -->
+            <p>Plenty of people might have the same skills, but what sets me apart is my sense of humor and ability to connect with people: yes I can deliver and always have that on top of mind... but I <em>actually</em> like people too! A winning combination, no?</p>
         </section>
     </div>
 
