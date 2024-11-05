@@ -16,7 +16,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>Dean Flanagan - Portfolio</h1>
+        <h1>Dean Flanagan - CKA - AWS Associate Architect</h1>
         <nav>
             <ul>
                 <li><a href="#projects">Projects</a></li>
@@ -29,11 +29,34 @@
             <h2>Projects</h2>
             <p>All links go to GitHub repositories</p>
             <ul>
-                <!-- <li><a href="#">SRE - reduce toil</a></li> -->
-                <li><a href="#">Volume autoscaler</a></li>
-                <li><a href="#">Confluent operator upgrade</a></li>
-                <li><a href="#">Pulumi and Kafka Confluent multi-region cluster</a></li>
-                <li><a href="#">Zonal redundancy</a></li>
+                <li>
+                    <h4>Kafka</h4>
+                    <ul>
+                        <li>Significant experience with Kafka in a tightly regulated banking customer as a high-througput streaming application</li>
+                        <li>Have worked with both <a href="https://github.com/deanflanagan/strimzi_kubernetes">on-platform</a> and <a href="https://github.com/deanflanagan/apache_kafka">off-platform</a> Kafka distributions and managed upgrades from engineering clusters right up to production</li>
+                        <li>Full Strimzi Kafka Kubernetes cluster for local testing <a href="https://github.com/deanflanagan/strimzi_kubernetes">here</a></li>
+                        <li>Also have familiarity with Confluent Cloud as a managed option</li>
+                    </ul>
+                </li>
+                <li>
+                    <h4>Projects</h4>
+                    <ul>
+                        <li>Migration and modernization of deployments (Dockerizing applications with <a href="https://cheatsheetseries.owasp.org/cheatsheets/Docker_Security_Cheat_Sheet.html">best security practices</a>)</li>
+                        <li>Improvement of availability for applications on Kubernetes platform in particular: using zonal redundancy, tolerations and priorityClasses</li>
+                        <li>Significantly reduced alert fatigue for clients in non-production environments, one example being a custom version of this PV autoscaler <a href="https://github.com/DevOps-Nirvana/Kubernetes-Volume-Autoscaler">here</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h4>DevOps</h4>
+                    <ul>
+                        <li>Used Pulumi on a large IAC project to manage the state of our Kafka clusters and custom resources around them (over and above the Operator)</li>
+                        <li>Solid experience with Docker, make and compose for accelerated local development for colleagues and their projects: examples <a href="https://github.com/deanflanagan/003_docker">here</a> and <a href="https://github.com/deanflanagan/strimzi_kubernetes/blob/main/makefile">here</a></li>
+                        <li>Managed and deployed AKS clusters using Azure Kubernetes Service and Jenkins</li>
+                        <li>Used Helm to deploy and manage Kubernetes applications in particular for upgrading Prometheus and Grafana versions</li>
+                        <li>Strong experience with kustomize and Flux</li>
+                        <li>Some experience with <a href="https://github.com/deanflanagan/terraform">Terraform</a> and light familiarity with GitHub Actions</li>
+                    </ul>
+                </li>
             </ul>
         </section>
         <section id="skills">
@@ -42,7 +65,7 @@
             <ul>
                 <li>
                     <div class="skill-title">
-                        <a href="#" onclick="toggleVisibility('fundamentals-details'); return false;">Fundamentals</a>
+                        <h4 onclick="toggleVisibility('fundamentals-details'); return false;">Fundamentals</h4>
                         <div class="logos">
                             <img src="icons/dns.svg" alt="DNS Logo" class="skill-logo">
                             <img src="icons/drawio.svg" alt="drawio Logo" class="skill-logo">
@@ -56,23 +79,23 @@
                             <img src="icons/jira.svg" alt="Jira Logo" class="skill-logo">
                         </div>
                     </div>
-                    <ul id="fundamentals-details" class="hidden">
+                    <ul id="fundamentals-details">
                         <li>Intermediate Python ability, some JavaScript and SQL skills. Some leetcode <a href="https://github.com/deanflanagan/leetcode" alt="leetcode">here</a>, lots more examples in my <a href="https://github.com/deanflanagan" alt="repos">repos</a></li>
-                        <li>Good working knowledge of basics including <a href="https://github.com/deanflanagan/004_DNS" alt="DNS">DNS</a>, bash scripting, linux, databases, configuration/secret management and more</li>
+                        <li>Good working knowledge of basics including <a href="https://github.com/deanflanagan/004_DNS" alt="DNS">DNS</a>, caching, bash scripting, linux, databases, configuration/secret management and more</li>
                         <li>Take pride in delivery clean work with documentation, diagrams and agendas: keeping account of work through Jira </li>
                         <li>Particularly enjoy working with music packages like <a href="https://pypi.org/project/music21/" alt="music21">music21</a> and midi integrations</li>
                     </ul>
                 </li>
                 <li>
                     <div class="skill-title">
-                        <a href="#" onclick="toggleVisibility('certifications-details'); return false;">Certifications</a>
+                        <h4 onclick="toggleVisibility('certifications-details'); return false;">Certifications</h4>
                         <div class="logos">
                             <img src="icons/chemistry.svg" alt="Chemistry Logo" class="skill-logo">
                             <img src="icons/cka.png" alt="CKA Logo" class="skill-logo">
                             <img src="icons/aws.svg" alt="AWS Logo" class="skill-logo">
                         </div>
                     </div>
-                    <ul id="certifications-details" class="hidden">
+                    <ul id="certifications-details">
                         <li><a href="https://www.universityofgalway.ie/courses/research-postgraduate-programmes/phd-and-masters/chemistry.html" alt="NUIG Chemistry">Bachelors of Science in Chemistry</a></li>
                         <li><a href="https://www.credly.com/badges/bca17fed-26ec-4f58-b0c5-a410a8abf836?source=linked_in_profile" alt="AWS">AWS Certified Solutions Architect – Associate</a></li>
                         <li><a href="https://www.credly.com/badges/624d9d31-84da-4cc3-b2a2-1ccf0aa99138/linked_in_profile" alt="CKA">Certified Kubernetes Administrator</a></li>
@@ -80,7 +103,7 @@
                 </li>
                 <li>
                     <div class="skill-title">
-                        <a href="#" onclick="toggleVisibility('devops-details'); return false;">Development and DevOps</a>
+                        <h4 onclick="toggleVisibility('devops-details'); return false;">Development/DevOps</h4>
                         <div class="logos">
                             <img src="icons/flux.svg" alt="Flux Logo" class="skill-logo">
                             <img src="icons/helm.svg" alt="Helm Logo" class="skill-logo">
@@ -89,21 +112,21 @@
                             <img src="icons/awscodepipeline.svg" alt="AWS CodePipeline Logo" class="skill-logo">
                         </div>
                     </div>
-                    <ul id="devops-details" class="hidden">
-                        <li>Automated CI/CD pipelines using Jenkins and GitHub Actions.</li>
-                        <li>Managed infrastructure as code with Terraform.</li>
-                        <li>Deployed applications using Docker and Kubernetes.</li>
+                    <ul id="devops-details">
+                        <li>Comfortable using pipelines in Jenkins, AWS CodePipeline and Concourse CI</li>
+                        <li>Good knowledge of using Terraform, Flux and Helm</li>
+                        <li>Cognizant of secret and configuration management</li>
                     </ul>
                 </li>
                 <li>
                     <div class="skill-title">
-                        <a href="#" onclick="toggleVisibility('kubernetes-details'); return false;">Containers</a>
+                        <h4 onclick="toggleVisibility('kubernetes-details'); return false;">Containers</h4>
                         <div class="logos">
                             <img src="icons/kubernetes.svg" alt="Kubernetes Logo" class="skill-logo">
                             <img src="icons/docker-svgrepo-com.svg" alt="Docker Logo" class="skill-logo">
                         </div>
                     </div>
-                    <ul id="kubernetes-details" class="hidden">
+                    <ul id="kubernetes-details">
                         <li>Deployed and managed Kubernetes clusters.</li>
                         <li>Configured Kubernetes resources for optimal performance.</li>
                         <li>Implemented Helm charts for application deployment.</li>
@@ -111,19 +134,18 @@
                 </li>
                 <li>
                     <div class="skill-title">
-                        <a href="#" onclick="toggleVisibility('monitoring-details'); return false;">Monitoring</a>
+                        <h4 onclick="toggleVisibility('monitoring-details'); return false;">Monitoring</h4>
                         <div class="logos">
                             <img src="icons/new_relic.svg" alt="New Relic Logo" class="skill-logo">
                             <img src="icons/prometheus.svg" alt="Prometheus Logo" class="skill-logo">
                             <img src="icons/grafana.svg" alt="Grafana Logo" class="skill-logo">                            
                             <img src="icons/splunk.svg" alt="Splunk Logo" class="skill-logo">
-
                         </div>
                     </div>
-                    <ul id="monitoring-details" class="hidden">
+                    <ul id="monitoring-details">
                         <li>Implemented monitoring solutions using Prometheus and Grafana.</li>
-                        <li>Set up alerting mechanisms to ensure system reliability.</li>
-                        <li>Analyzed metrics to optimize system performance.</li>
+                        <li>Set up alerting mechanisms to ensure system reliability for platform (Kubernetes) and application (Kafka)</li>
+                        <li>Worked with SREs to identify what was important for alerts and what was not</li>
                     </ul>
                 </li>
             </ul>
@@ -134,7 +156,7 @@
             <p>I'm a backend engineer with a chemistry background who values both technical and soft skills. I started in chemistry, conducting plant trials in over thirty countries. I then moved into sales, where I was reasonably successful but found it wasn’t for me long term; at least not in the industries I was in.</p>
             <p>While in sales, I began automating tedious tasks in Excel with Python, which sparked my passion for programming. The shift into tech felt natural, and I discovered the satisfaction of building solutions over selling them.</p>
             <!-- <p>Now, with a few years in tech, I've combined my sales insight and technical skills to become a contractor, delivering solutions that drive value and efficiency.</p> -->
-            <p>Plenty of people might have the same skills, but what sets me apart is my sense of humor and ability to connect with people: yes I can deliver and always have that on top of mind... but I <em>actually</em> like people too! A winning combination, no?</p>
+            <p>Plenty of people might have the same skills, but what sets me apart is my sense of humor and ability to work well with people: yes I can deliver and always have that on top of mind... but I <em>actually</em> like people too! A winning combination, no?</p>
         </section>
     </div>
 
